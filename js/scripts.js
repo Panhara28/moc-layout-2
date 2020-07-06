@@ -204,7 +204,7 @@ function initMOC() {
                 clickable: true,
             },
             autoplay: {
-                delay: 222000,
+                delay: 8000,
                 disableOnInteraction: false
             },
             navigation: {
