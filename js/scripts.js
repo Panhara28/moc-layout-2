@@ -204,7 +204,7 @@ function initMOC() {
                 clickable: true,
             },
             autoplay: {
-                delay: 8000,
+                delay: 222000,
                 disableOnInteraction: false
             },
             navigation: {
@@ -1261,24 +1261,196 @@ function readyFunctions() {
 }
 
 $(document).ready(function(){
-    $("#wrapper").addClass("fs-mode-active");
+    // $("#wrapper").addClass("fs-mode-active");
 
-        TweenMax.to($(".bottom-panel"), 0.3, {
-            force3D: true,
-            bottom: "-100px",
-            ease: Power2.easeOut
-        });
-        TweenMax.to($("header.main-header"), 0.3, {
-            force3D: true,
-            top: "-100px",
-            ease: Power2.easeOut,
-            onComplete: function () {
-                TweenMax.to($(".close-fs"), 0.8, {
-                    force3D: true,
-                    bottom: 0,
-                });
+    //     TweenMax.to($(".bottom-panel"), 0.3, {
+    //         force3D: true,
+    //         bottom: "-100px",
+    //         ease: Power2.easeOut
+    //     });
+    //     TweenMax.to($("header.main-header"), 0.3, {
+    //         force3D: true,
+    //         top: "-100px",
+    //         ease: Power2.easeOut,
+    //         onComplete: function () {
+    //             TweenMax.to($(".close-fs"), 0.8, {
+    //                 force3D: true,
+    //                 bottom: 0,
+    //             });
 
-            }
-        });
+    //         }
+    //     });
     
 })
+
+$(document).ready(function () {
+    // Create two variable with the names of the months and days in an array
+    var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    // Create two variable with the names of the months and days in an array (Khmer)
+    var monthNamesKH = ["មករា", "កុម្ភៈ", "មីនា", "មេសា", "ឧសភា", "មិថុនា", "កក្កដា", "សីហា", "កញ្ញា", "តុលា", "វិច្ឆិកា", "ធ្នូ"];
+    var dayNamesKH = ["អាទិត្យ", "ច័ន្ទ", "អង្គារ", "ពុធ", "ព្រហស្បតិ៍័", "សុក្រ", "សៅរ៍"];
+
+
+    var mydate = new Date();
+    var year = mydate.getYear();
+    if (year < 1000);
+    year += 1900;
+    var day = mydate.getDay();
+    var month = mydate.getMonth();
+    var daym = mydate.getDate();
+    if (daym < 10);
+    daym = "0" + daym;
+    var strday;
+    var stryear;
+    if (daym == 31) {
+        strday = "៣១";
+    }
+    else if (daym == 30) {
+        strday = "៣០";
+    }
+    else if (daym == 29) {
+        strday = "២៩";
+    }
+    else if (daym == 28) {
+        strday = "២៨";
+    }
+    else if (daym == 27) {
+        strday = "២៧";
+    }
+    else if (daym == 26) {
+        strday = "២៦";
+    }
+    else if (daym == 25) {
+        strday = "២៥";
+    }
+    else if (daym == 24) {
+        strday = "២៤";
+    }
+    else if (daym == 23) {
+        strday = "២៣";
+    }
+    else if (daym == 22) {
+        strday = "២២";
+    }
+    else if (daym == 21) {
+        strday = "២១";
+    }
+    else if (daym == 20) {
+        strday = "២០";
+    }
+    else if (daym == 19) {
+        strday = "១៩";
+    }
+    else if (daym == 18) {
+        strday = "១៨";
+    }
+    else if (daym == 17) {
+        strday = "១៧";
+    }
+    else if (daym == 16) {
+        strday = "១៦";
+    }
+    else if (daym == 15) {
+        strday = "១៥";
+    }
+    else if (daym == 14) {
+        strday = "១៤";
+    }
+    else if (daym == 13) {
+        strday = "១៣";
+    }
+    else if (daym == 12) {
+        strday = "១២";
+    }
+    else if (daym == 11) {
+        strday = "១១";
+    }
+    else if (daym == 10) {
+        strday = "១០";
+    }
+    else if (daym == 9) {
+        strday = "០៩";
+    }
+    else if (daym == 8) {
+        strday = "០៨";
+    }
+    else if (daym == 7) {
+        strday = "០៧";
+    }
+    else if (daym == 6) {
+        strday = "០៦";
+    }
+    else if (daym == 5) {
+        strday = "០៥";
+    }
+    else if (daym == 4) {
+        strday = "០៤";
+    }
+    else if (daym == 3) {
+        strday = "០៣";
+    }
+    else if (daym == 2) {
+        strday = "០២";
+    }
+    else if (daym == 1) {
+        strday = "០១";
+    }
+    else {
+        strday = "  ";
+    }
+
+    if (year == 2020) {
+        stryear = "២០២០";
+    }
+    else if (year == 2021) {
+        stryear = "២០២១";
+    }
+    else if (year == 2022) {
+        stryear = "២០២២";
+    }
+    else if (year == 2023) {
+        stryear = "២០២៣";
+    }
+    else if (year == 2024) {
+        stryear = "២០២៤";
+    }
+    else if (year == 2025) {
+        stryear = "២០២៥";
+    }
+    else if (year == 2026) {
+        stryear = "២០២៦";
+    }
+    else {
+        stryear = year;
+    }
+
+    // Create a newDate() object
+    var newDate = new Date();
+    // Extract the current date from Date object
+    newDate.setDate(newDate.getDate());
+    // Output the day, date, month and year   
+    $('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+    $('#DateKH').html("ថ្ងៃ" + dayNamesKH[newDate.getDay()] + " ទី" + strday + " ខែ" + monthNamesKH[newDate.getMonth()] + " ឆ្នាំ" + stryear);
+    setInterval(function () {
+        // Create a newDate() object and extract the seconds of the current time on the visitor's
+        var seconds = new Date().getSeconds();
+        // Add a leading zero to seconds value
+        $("#sec").html((seconds < 10 ? "0" : "") + seconds);
+    }, 1000);
+
+    setInterval(function () {
+        // Create a newDate() object and extract the minutes of the current time on the visitor's
+        var minutes = new Date().getMinutes();
+        // Add a leading zero to the minutes value
+        $("#min").html((minutes < 10 ? "0" : "") + minutes);
+    }, 1000);
+
+    setInterval(function () {
+        // Create a newDate() object and extract the hours of the current time on the visitor's
+        var hours = new Date().getHours();
+        // Add a leading zero to the hours value
+        $("#hours").html((hours < 10 ? "0" : "") + hours);
+    }, 1000);
+});
