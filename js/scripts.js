@@ -81,7 +81,7 @@ function initMOC() {
              spaceBetween: 10,
              grabCursor: true,
              mousewheel: mouseContr,
-             speed: 1400,
+             speed: 10000,
              direction: "horizontal",
              scrollbar: {
                  el: '.hs_init',
@@ -134,7 +134,7 @@ function initMOC() {
             preloadImages: false,
             loop: true,
             grabCursor: true,
-            speed: 1400,
+            speed: 10000,
             spaceBetween: 0,
             effect: "slide",
             mousewheel: mouseContr2,
@@ -148,7 +148,7 @@ function initMOC() {
                 prevEl: '.hero-slider-button-prev',
             },
             autoplay: {
-                delay: 3500,
+                delay: 9000,
                 disableOnInteraction: false
             },
 
@@ -195,7 +195,7 @@ function initMOC() {
             preloadImages: false,
             loop: true,
             grabCursor: true,
-            speed: 1400,
+            speed: 15000,
             spaceBetween: 0,
             effect: "slide",
             mousewheel: mouseContr2,
@@ -204,7 +204,7 @@ function initMOC() {
                 clickable: true,
             },
             autoplay: {
-                delay: 3500,
+                delay: 8000,
                 disableOnInteraction: false
             },
             navigation: {
